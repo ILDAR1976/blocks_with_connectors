@@ -71,8 +71,8 @@ function drawConnector(nodeA, nodeB, con) {
     }
     
     if (nodeB.getAttribute("class") === "dot") {
-        dtXB = parentB.offsetLeft + nodeB.offsetLeft ;
-        dtYB = parentB.offsetTop + nodeB.offsetTop  + ((nodeA.getAttribute("class") === "dot") ? (parentA.offsetHeight + nodeA.offsetHeight)/2:nodeA.offsetHeight/2) - 18;
+        dtXB = parentB.offsetLeft + nodeB.offsetLeft + 3;
+        dtYB = parentB.offsetTop + nodeB.offsetTop  + ((nodeA.getAttribute("class") === "dot") ? (parentA.offsetHeight + nodeA.offsetHeight)/2:nodeA.offsetHeight/2) - 20;
     } else {
         
         if (nodeB.getAttribute("class") === "pointer") {
