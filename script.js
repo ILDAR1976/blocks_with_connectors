@@ -233,7 +233,7 @@ function updateNodes() {
                                (dots[j].parentElement.offsetTop + dots[j].offsetTop)) <= 5 &&
                   Math.abs((pointers[i].parentElement.offsetLeft + pointers[i].offsetLeft)  -
                                (dots[j].parentElement.offsetLeft + dots[j].offsetLeft)) <= 5 &&
-                  (pointers[i]["dot"] != dots[j].parentElement.id + dots[j].id )&&(i!=j) && (i<j)) {
+                  (pointers[i]["dot"] != dots[j].parentElement.id + dots[j].id )) {
                   //console.log("pointer: " + dots[j].parentElement.id + " dot: " +dots[j].id);
                   let connector = document.getElementById(pointers[i]["con"]);
                   connector.setAttribute("nodeB",dots[j].id);
