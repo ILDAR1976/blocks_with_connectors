@@ -50,6 +50,8 @@ body {
 
 .pointer {
     position: absolute;
+    animation: pulse 0.4s ease-out infinite;
+    transform: scale(0);
     background: #000;
     top: 0px;
     left: 0px;
@@ -65,4 +67,25 @@ body {
     position: absolute; 
     top: 0px;
     left: 0px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        background-color: #c8c2ff;
+        opacity: 0%;
+    }
+
+    50% {
+        transform: scale(1);
+        background-color: rgba(101, 71, 255, 0.97);
+        opacity: 10%;
+    }
+
+    100% {
+        transform: scale(2);
+        background-color: #2806ff;
+        opacity: 60%;
+    }
+
 }
